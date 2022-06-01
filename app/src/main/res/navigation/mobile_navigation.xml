@@ -22,4 +22,8 @@
         android:name="edu.ort.tp3parcial_a.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="edu.ort.tp3parcial_a.ui.settings.SettingsFragment"
+        android:label="@string/title_configuracion" />
 </navigation>
