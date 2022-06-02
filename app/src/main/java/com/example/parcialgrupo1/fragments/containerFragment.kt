@@ -14,7 +14,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class containerFragment : Fragment() {
     lateinit var v : View
-    lateinit var viewPager2: ViewPager2
     lateinit var viewPager: ViewPager2
     lateinit var tabLayout: TabLayout
 
@@ -29,15 +28,14 @@ class containerFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         v=  inflater.inflate(R.layout.fragment_container, container, false)
-        viewPager2 = v.findViewById(R.id.view_pager)
+        tabLayout =  v.findViewById(R.id.Tab_layout)
+        viewPager = v.findViewById(R.id.view_pager)
         return v
     }
 
     override fun onStart() {
         super.onStart()
-        viewPager2.adapter = ViewPagerAdapter(requireActivity())
-        tabLayout =  v.findViewById(R.id.Tab_layout)
-        viewPager = v.findViewById(R.id.view_pager)
+        viewPager.setAdapter(ViewPagerAdapter(requireActivity()))
 
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
@@ -48,13 +46,13 @@ class containerFragment : Fragment() {
                     //tab.text
                 }
                 1 -> {
-                    tab.text = "Tab #2"
+                    tab.text = "NOTIF"
                     //tab.orCreateBadge.isVisible = true
                     //tab.orCreateBadge.number = 3
                     tab.setIcon(androidx.core.R.drawable.notify_panel_notification_icon_bg)
                 }
                 2 -> {
-                    tab.text = "Tab #3"
+                    tab.text = "SETTINGS"
                     tab.setIcon(androidx.core.R.drawable.notify_panel_notification_icon_bg)
                 }
                 else -> tab.text = "undefined"
