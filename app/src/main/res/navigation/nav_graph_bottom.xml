@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_bottom"
+    app:startDestination="@id/home3">
+
+    <fragment
+        android:id="@+id/home3"
+        android:name="ar.org.cdsfuturo.examen.fragments.Home"
+        android:label="home"
+        tools:layout="@layout/home" />
+    <fragment
+        android:id="@+id/listaNotif"
+        android:name="ar.org.cdsfuturo.examen.fragments.ListaNotif"
+        android:label="llista_notif"
+        tools:layout="@layout/llista_notif" />
+    <fragment
+        android:id="@+id/notificaciones2"
+        android:name="ar.org.cdsfuturo.examen.fragments.Notificaciones"
+        android:label="notificaciones"
+        tools:layout="@layout/notificaciones" />
+</navigation>
