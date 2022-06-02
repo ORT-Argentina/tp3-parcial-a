@@ -5,9 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager2.widget.ViewPager2
 import com.example.parcialgrupo1.R
 
 class Fragment_home : Fragment() {
+    lateinit var v:View
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +22,9 @@ class Fragment_home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        v = inflater.inflate(R.layout.fragment_home, container, false)
+
+        return v
     }
 
 

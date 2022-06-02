@@ -9,12 +9,9 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="com.example.parcialgrupo1.fragments.Fragment_home"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp" />
-
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_login" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.parcialgrupo1.adapters
 
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import com.example.parcialgrupo1.fragments.Fragment_Notification
 import com.example.parcialgrupo1.fragments.Fragment_Setting
@@ -20,6 +21,10 @@ class ViewPagerAdapter (fragmentActivity: FragmentActivity) : androidx.viewpager
         }
     }
     override fun getItemCount(): Int {
-        return 3
+        return TAB_COUNT
     }
+    companion object{
+        private const val TAB_COUNT = 3
+    }
+
 }

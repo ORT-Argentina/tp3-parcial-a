@@ -9,7 +9,7 @@ import com.example.parcialgrupo1.R
 
 
 class Fragment_Setting : Fragment() {
-
+    lateinit var v: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +21,8 @@ class Fragment_Setting : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment__setting, container, false)
+        v =  inflater.inflate(R.layout.fragment__setting, container, false)
+        return v
     }
 
 

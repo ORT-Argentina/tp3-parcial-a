@@ -5,4 +5,11 @@
     android:id="@+id/NotificationLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Fragment_Notification"/>
+    tools:context=".fragments.Fragment_Notification">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTIF" />
+</androidx.constraintlayout.widget.ConstraintLayout>

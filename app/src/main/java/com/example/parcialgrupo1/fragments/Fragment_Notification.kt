@@ -5,10 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager2.widget.ViewPager2
 import com.example.parcialgrupo1.R
 
 
 class Fragment_Notification : Fragment() {
+    lateinit var v: View
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +23,10 @@ class Fragment_Notification : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment__notification, container, false)
+
+        v= inflater.inflate(R.layout.fragment__notification, container, false)
+
+        return v
     }
 
 
