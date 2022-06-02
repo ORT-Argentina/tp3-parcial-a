@@ -18,6 +18,11 @@ class NotificationHolder (v: View) : RecyclerView.ViewHolder(v) {
         txt.text = texto
     }
 
+    fun setText2(texto : String){
+        val txt : TextView = view.findViewById(R.id.notifications_card_time)
+        txt.text = texto
+    }
+
     fun getCardLayout() : CardView {
         return view.findViewById(R.id.notifications_card_item)
     }

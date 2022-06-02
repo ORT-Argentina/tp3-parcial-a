@@ -14,6 +14,7 @@ class NotificationsListAdapter(private var stringList:MutableList<String>) : Rec
 
     override fun onBindViewHolder(holder: NotificationHolder, position: Int) {
         holder.setText(stringList[position])
+        holder.setText2("2 min")
     }
 
     override fun getItemCount(): Int {

@@ -38,9 +38,9 @@ class NotificationsFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-        var notificaciones : MutableList<String> = ArrayList<String>()
+        var notificaciones : MutableList<String> = ArrayList()
         for(i in 1..10){
-            notificaciones.add(i.toString())
+            notificaciones.add("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nulla sem, tempor a dui nec, pretium molestie quam. Nulla tristique odio et erat viverra mollis.")
         }
 
         recycler.setHasFixedSize(true)
