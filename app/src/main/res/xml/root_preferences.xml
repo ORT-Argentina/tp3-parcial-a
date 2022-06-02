@@ -2,6 +2,6 @@
 
     <SwitchPreferenceCompat
         app:key="sync"
-        app:title="@string/config_notificaciones" />
+        app:title="Notificaciones" />
 
 </PreferenceScreen>
