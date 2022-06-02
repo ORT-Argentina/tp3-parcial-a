@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.edu.ort.parcialtp3.fragments.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splash_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.edu.ort.parcialtp3.fragments.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.edu.ort.parcialtp3.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.edu.ort.parcialtp3.fragments.Notifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.edu.ort.parcialtp3.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsActivity"
+            app:destination="@id/settingsActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_notifications"
+            app:destination="@id/notifications" />
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ParcialTp3</string>
+    <string name="splash_title">Ingresar</string>
+    <string name="login_main_title">ShopShop</string>
+    <string name="login_main_welcome">Bienvenido</string>
+    <string name="login_main_enter_text">Ingresar a ShopShop</string>
+    <string name="login_main_email_text">E-mail*</string>
+    <string name="login_main_password_text">Contraseña*</string>
+    <string name="login_main_forgot_text">¿Olvidaste la contraseña?</string>
+    <string name="login_main_no_account">Si no tienes cuenta,</string>
+    <string name="login_main_register_text"><b>Regístrate</b></string>
+    <string name="settings_notifications_title">Notificaciones</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
