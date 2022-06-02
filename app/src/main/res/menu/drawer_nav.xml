@@ -6,7 +6,8 @@
         android:icon="@drawable/ic_baseline_home_24"
         android:checked="true"
         android:checkable="true"
-        android:title="Home" />
+        android:title="Home"
+        android:iconTint="@color/white"/>
 
 
     <item
@@ -23,4 +24,6 @@
         android:checkable="true"
         android:title="Configuracion" />
 
+    <item
+        android:title="Salir" />
 </menu>

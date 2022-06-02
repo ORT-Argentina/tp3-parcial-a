@@ -10,6 +10,7 @@ import ar.org.cdsfuturo.examen.R
 
 class HolderNotificaciones (v: View) : RecyclerView.ViewHolder(v) {
     private var view: View
+    private lateinit var btnGoConf : Button
 
     init {
         this.view = v
@@ -21,6 +22,7 @@ class HolderNotificaciones (v: View) : RecyclerView.ViewHolder(v) {
         val txtTiempo: TextView = view.findViewById(R.id.txt_tiempo)
         txtTiempo.text = tiempo
     }
+
 
     fun getCardLayout(): CardView {
         return view.findViewById(R.id.card_package_item)

@@ -17,7 +17,7 @@ tools:context=".activities.MainActivityHome">
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        app:itemBackground="@color/purple_500"
+        app:itemBackground="@color/white"
         app:itemHorizontalTranslationEnabled="true"
         app:labelVisibilityMode="auto"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,8 @@ tools:context=".activities.MainActivityHome">
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView"
-        app:menu="@menu/bottom_nav"></com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:menu="@menu/bottom_nav"
+        app:itemIconTint="@color/red"></com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <include
         layout="@layout/toolbar"
@@ -43,9 +44,8 @@ tools:context=".activities.MainActivityHome">
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-
+        app:layout_constraintBottom_toBottomOf="parent">
+    </fragment>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -55,8 +55,8 @@ tools:context=".activities.MainActivityHome">
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="start"
+    android:background="@color/red"
     app:headerLayout="@layout/header_layout"
     app:menu="@menu/drawer_nav"/>
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

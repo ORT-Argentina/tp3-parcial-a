@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ar.org.cdsfuturo.examen.R
 import ar.org.cdsfuturo.examen.entity.Notificaciones
 import ar.org.cdsfuturo.examen.holder.HolderNotificaciones
+import com.google.android.material.navigation.NavigationView
 
 class ListaNotifAdapter(
     private var notifList: MutableList<Notificaciones>,

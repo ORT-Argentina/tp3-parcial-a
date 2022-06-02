@@ -5,7 +5,8 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.Notificaciones">
+    tools:context=".fragments.Notificaciones"
+    android:background="@color/fondo">
 
     <Switch
         android:id="@+id/switch1"

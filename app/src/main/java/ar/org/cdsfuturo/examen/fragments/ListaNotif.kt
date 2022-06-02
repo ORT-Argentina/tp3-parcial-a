@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ar.org.cdsfuturo.examen.R
@@ -37,7 +38,8 @@ class ListaNotif : Fragment() {
     override fun onStart() {
         super.onStart()
 
-
+        notificaciones.add(Notificaciones("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, lacus et.","2min"))
+        notificaciones.add(Notificaciones("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, lacus et.","2min"))
         notificaciones.add(Notificaciones("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, lacus et.","2min"))
         notificaciones.add(Notificaciones("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, lacus et.","2min"))
         notificaciones.add(Notificaciones("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim, lacus et.","2min"))
@@ -56,6 +58,7 @@ class ListaNotif : Fragment() {
 
     fun onItemClick(position: Int): Boolean {
         Snackbar.make(v, position.toString(), Snackbar.LENGTH_SHORT).show()
+       // findNavController().navigate(ListaNotifDirections.actionListaNotif2ToConfiguracion2())
         return true
     }
 }

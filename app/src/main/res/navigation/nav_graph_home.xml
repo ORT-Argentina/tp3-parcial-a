@@ -8,16 +8,16 @@
     <fragment
         android:id="@+id/home2"
         android:name="ar.org.cdsfuturo.examen.fragments.Home"
-        android:label="home"
+        android:label="Home"
         tools:layout="@layout/home" />
     <fragment
         android:id="@+id/configuracion"
         android:name="ar.org.cdsfuturo.examen.fragments.Notificaciones"
-        android:label="configuracion"
+        android:label="Configuración"
         tools:layout="@layout/notificaciones" />
     <fragment
         android:id="@+id/listaNotif2"
         android:name="ar.org.cdsfuturo.examen.fragments.ListaNotif"
-        android:label="llista_notif"
-        tools:layout="@layout/llista_notif" />
+        android:label="Notificaciones"
+        tools:layout="@layout/llista_notif"/>
 </navigation>
