@@ -1,10 +1,8 @@
 package ar.org.cdsfuturo.examen.fragments
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -32,7 +30,13 @@ class ListaNotif : Fragment() {
     ): View? {
         v = inflater.inflate(R.layout.llista_notif, container, false)
         recNotificaciones = v.findViewById(R.id.rec_notifi)
+        setHasOptionsMenu(true)
         return v
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.toolbar_main, menu)
+        super.onCreateOptionsMenu(menu, inflater)
     }
 
     override fun onStart() {
